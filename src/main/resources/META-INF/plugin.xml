@@ -1,24 +1,22 @@
 <idea-plugin>
     <id>com.dekonoplyov.KeymapNationalizer</id>
     <name>Keymap Nationalizer</name>
-    <vendor email="denis.konoplyov@jetbrains.com" url="http://www.jetbrains.com">JetBrains</vendor>
+    <vendor email="github@strangeway.org" url="https://www.strangeway.org">Yuriy Artamonov</vendor>
 
-    <description>
-        <![CDATA[
-        Keymap nationalizer plugin.<br>
-        "Generate National Keymap" action in "Search Everywhere" menu.<br>
-        You can replace shortcuts in Keymap.<br>
-        "; with alt [" will replace all shortcuts with ; to [ and add alt modifier.<br>
-        https://github.com/dekonoplyov/KeymapNationalizer <br> ]]>
-    </description>
+    <description><![CDATA[
+        <p>Provides "Generate National Keymap" action in "Search Everywhere" menu.<br>
+        You can replace shortcuts in the Keymap.<br>
+        "; with alt [" will replace all shortcuts with ; to [ and add alt modifier.</p>
+        <p>Predefined mappings are:</p>
+        <ul>
+            <li>French</li>
+            <li>German</li>
+            <li>Italian</li>
+            <li>Czech</li>
+        </ul>
+    ]]></description>
 
-    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-    </extensions>
 
     <actions>
         <action id="Keymap Nationalizer" class="com.dekonoplyov.KeymapNationalizer"

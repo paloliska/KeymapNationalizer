@@ -3,7 +3,6 @@ import org.junit.Test
 import java.awt.event.KeyEvent
 import kotlin.test.*
 
-
 class KeyCodesTest {
     @Test
     fun checkLowerCase() {
